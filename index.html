@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Tshering Tashi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
       .navbar-toggler-icon {
@@ -12,28 +14,68 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark border fixed-top">
         <div class="container-fluid">
           <img src="assets/logo.png" width="50px">
-          <button class="navbar-toggler text-white border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <h4 class="text-white" style="font-weight: bold;">Tshering Tashi</h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white active hover" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">About</a>
+                <a class="nav-link text-white hover" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contact</a>
+                <a class="nav-link text-white hover" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <section id="home">
+      <div class="background-container">
+        <div class="content">
+        <div class="text-container">
+          <p style="font-size: 60px; font-weight: bold;">I am Tshering Tashi</p>
+          <span id="changingText"></span>
+      </div>  
+    </div>
+  </div>
+</section>
+
+  <div class="about-page" style="margin-top: 30px; padding-bottom: 20px;">
+  
+    <section id="about">
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am Tshering Tashi, and I am currently studying for a diploma in Information and Technology. 
+                I completed my high school at Yoezerling High School in Paro, where I took Arts with BMT.
+              </p>
+              <p>
+                It was unexpected for me to end up learning programming, but once I stepped into this field,
+                 I realized how important it is in the digital world, and I was fascinated by the learning process.
+              </p>
+              <p>
+                I am enjoying what I am learning and am enthusiastic about advancing to a professional level. 
+                I understand that reaching this level requires hard work. Therefore, I have learned many things 
+                from YouTube tutorials and online courses to improve myself
+              </p>
+            </div>
+          </div>
+        </section>
+
+   
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <script src="index.js"></script>
   </body>
 </html>

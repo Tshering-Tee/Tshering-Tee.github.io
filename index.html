@@ -1,81 +1,368 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tshering Tashi</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="assets/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-      .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-dark border fixed-top">
-        <div class="container-fluid">
-          <img src="assets/logo.png" width="50px">
-          <h4 class="text-white" style="font-weight: bold;">Tshering Tashi</h4>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white active hover" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white hover" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tshering Tashi</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <section id="home">
-      <div class="background-container">
-        <div class="content">
-        <div class="text-container">
-          <p style="font-size: 60px; font-weight: bold;">I am Tshering Tashi</p>
-          <span id="changingText"></span>
-      </div>  
     </div>
-  </div>
-</section>
+  </header>
 
-  <div class="about-page" style="margin-top: 30px; padding-bottom: 20px;">
-  
-    <section id="about">
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/65e807e2934d41328231df66e6be760c.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Tshering Tashi</h2>
+        <p><span class="typed" data-typed-items="Designer, Developer, Freelancer, Video Editor"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/half-photo.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Tshering Tashi</span></p>
+                <p><strong>Profile: </strong> <span>full stack developer</span></p>
+                <p><strong>Email: </strong> <span>dorjitashi113@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>(+975) 17935640</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>PHP</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Adobe Premiere Pro</span> <i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
           <div class="col-md-6">
             <div class="about-me">
               <h4>About me</h4>
               <p>
-                I am Tshering Tashi, and I am currently studying for a diploma in Information and Technology. 
-                I completed my high school at Yoezerling High School in Paro, where I took Arts with BMT.
+                I am Tshering Tashi, a 19-year-old full-stack developer from Bhutan, deeply passionate about technology 
+                and its potential to drive change. My journey in the tech world began with a desire to contribute
+                 to Bhutan's growing digital sector, and this ambition led me to pursue a Diploma in Web Development
+                  at Athang Training Academy. Here, I am actively building my skills in various web technologies, 
+                  with a focus on becoming proficient in both front-end and back-end development. My experience
+                   has fueled my determination to excel in this field and make a significant impact as a developer in my country.
               </p>
               <p>
-                It was unexpected for me to end up learning programming, but once I stepped into this field,
-                 I realized how important it is in the digital world, and I was fascinated by the learning process.
-              </p>
-              <p>
-                I am enjoying what I am learning and am enthusiastic about advancing to a professional level. 
-                I understand that reaching this level requires hard work. Therefore, I have learned many things 
-                from YouTube tutorials and online courses to improve myself
+                Looking ahead, I am committed to continuous learning and growth. My ultimate goal is to further my studies 
+                and deepen my expertise in technology, ensuring that I stay at the forefront of industry developments.
+                 I believe that with dedication and hard work, I can play a key role in advancing Bhutan's tech
+                  landscape and contribute to its evolution as a digitally empowered nation.
               </p>
             </div>
           </div>
-        </section>
+        </div>
 
-   
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+      </div>
 
-    <script src="index.js"></script>
-  </body>
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Tshering Tashi</h4>
+              <p><em>I am currently studying IT at Athang Training Academy, where I’ve learned languages like HTML, CSS, JavaScript, C, and PHP, along with frameworks such as NestJS, Angular, and Laravel. I’ve completed projects including a School Enrollment system and an E-Commerce website, using both front-end and back-end technologies.</em></p>
+              <ul>
+                <li>Bhutan,Thimphy, Bebena</li>
+                <li>(+975) 17935640</li>
+                <li>dorjitashi113@gmial.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Arts</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Yoezerling Higher Secondary School, Paro</em></p>
+              <p>I completed my high school education at Yoezerling Higher Secondary School, where I gained valuable skills in problem-solving (BMT), economics, and communication, all of which are essential for business and professional interactions</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Diploma of IT</h4>
+              <h5>2023 - 2025</h5>
+              <p><em>Athang Training Institute, Thimphu,  Bebena</em></p>
+              <p>My education at Athang Training Academy is shaping my future, as I aspire to become a full-stack developer.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Skills in Progress</h3>
+            <div class="resume-item">
+              <h4>Video Editing</h4>
+              <h5>2023 - Present</h5>
+              <ul>
+                <li>Developed a passion for video editing from a young age and pursued it independently alongside other studies</li>
+                <li>Continuously enhancing creativity and video editing skills through self-directed learning. </li>
+                <li>Acquired knowledge and skills from videos edited by professionals</li>
+                <li>I have predominantly focused on editing online games and aspire to transition into editing films and movies in the future.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Graphic design</h4>
+              <h5>2023 - Present</h5>
+              <ul>
+                <li>I have acquired basic graphic design skills through tutorials and am currently pursuing advanced knowledge through self-directed learning</li>
+                <li>Created student cards, resumes, and CVs using Photoshop</li>
+                <li>I have designed several YouTube thumbnails for my channel</li>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <a href="https://www.google.com/maps/search/?api=1&query=Bhutan,Thimphu,Bebena,Athang" target="_blank">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                </a>
+                
+                <div>
+                  <h3>Address</h3>
+                  <p>Bhutan, Thimphu, Bebena</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <a href="tel:+97517635915">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+              </a>
+                
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+975 17935640</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <a href="mailto: dorjitashi113@gmail.com">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+              </a>
+                <div>
+                  <h3>Email Us</h3>
+                  <a>dorjitashi113@gmail.com</a>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Tshering Tashi</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
